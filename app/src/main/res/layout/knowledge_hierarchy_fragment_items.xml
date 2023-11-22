@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/knowledge_hierarchy_fragment_items_test_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="25sp"
+        android:text="111111"/>
+    <TextView
+        android:id="@+id/knowledge_hierarchy_fragment_items_test_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:text="22222"/>
+    <ImageView
+        android:id="@+id/knowledge_hierarchy_fragment_items_imageView"
+        android:layout_width="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="50dp"
+        />
+
+</LinearLayout>

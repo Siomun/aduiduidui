@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable-v24/linearlayout_water_selector.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/home_tab.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_home_normal_24dp.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_home_press_24dp.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_knowledge_hierarchy_normal.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_knowledge_hierarchy_press.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_knowledgehierarchy_black.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_project_black_24dp.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_project_press.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_resource_return.xml" value="0.232" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_search.xml" value="0.103" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_user_black_24dp.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_user_normal.xml" value="0.1885" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/ic_user_press.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/knowledge_hierarchy_tab.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/linearlayout_water_selector.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/project_tab.xml" value="0.115" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/drawable/user_tab.xml" value="0.2585" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/activity_history.xml" value="0.340625" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/activity_home_fragment_click.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/activity_knowledge_hierarchy_list.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/activity_login.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/activity_search.xml" value="0.1801566579634465" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/content_search.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/footertext.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/footertext_over.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/footertextover.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/footertxt_over.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_blank.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_first.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_item.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_item_list.xml" value="0.340625" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_knowledge_hierarchy.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_knowledge_hierarchy_list.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_project.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_project_list.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_second.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/fragment_user.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/head_holder.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/history_data_recyclerview.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/home_recycler_view.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/home_slideshow.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/item.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/knowledge_hierarchy_fragment_items.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/knowledge_hierarchy_item.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/navigation_bar.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/project_recycler_view.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/search_activity.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/search_recycler_view.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/16956/AndroidStudioProjects/PlayAndroid/app/src/main/res/layout/toobar.xml" value="0.2391304347826087" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.example.playandroid.viewpaper.MyViewPager_NoScroll
+        android:id="@+id/home_view_paper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </com.example.playandroid.viewpaper.MyViewPager_NoScroll>
+    <TextView
+        android:id="@+id/home_banner_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="#73FFFFFF"
+        android:layout_marginTop="173dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
