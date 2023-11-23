@@ -10,15 +10,11 @@ public class MyViewPager_NoScroll extends ViewPager {
     public MyViewPager_NoScroll(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
-
-
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         super.onInterceptTouchEvent(ev);
         return true;
     }
-
-
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         super.onTouchEvent(ev);
@@ -55,8 +51,6 @@ public class MyViewPager_NoScroll extends ViewPager {
                 }
                 break;
         }
-
         return true;        //让事件不再分发
     }
-
 }
