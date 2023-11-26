@@ -181,7 +181,6 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
                             mHandler.sendEmptyMessageDelayed(0, 900*2);
                             beginCarousel=false;
                             if(viewPaperClick==0){
-                                 Log.d("touch","5555");
                                 int item= mViewPager.getCurrentItem();
                                 String data=mBannerLink.get(item);
                                 String title=mBannerTitle.get(item);
@@ -271,7 +270,6 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
 
 
     }
-
     @Override
     public int getItemViewType(int position) {
         if (position == mList.size()) {
@@ -279,7 +277,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
             return 1;
         } else if(position==0){
             //加载HeadHolder
-            return 3;
+            return 2;
         }else {
             return 0;
         }
@@ -296,13 +294,12 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         //... list传进来的数据 添加到mList中
         if(list.isEmpty()){
             arriveBottom=true;
-        }else{
-            mList.size()+1;
         }
         for (int i = 0; i < list.size(); i++) {
             mList.add(list.get(i));
         }
-       
+        //通知适配器更新
+        notifyDataSetChanged();
     }
 
 }
