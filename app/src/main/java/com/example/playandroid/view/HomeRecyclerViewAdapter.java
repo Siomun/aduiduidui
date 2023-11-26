@@ -84,6 +84,123 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         }
     }
 
+    public class HeadHolder extends RecyclerView.ViewHolder implements IView2,IView{
+        Presenter presenter;
+        public HeadHolder(@NonNull View itemView) {
+            super(itemView);
+            rootView=itemView;
+            presenter=new Presenter(this,this);
+            presenter.fetchGetBannerData();
+        }
+        @SuppressWarnings("unchecked")
+        @SuppressLint("ClickableViewAccessibility")
+        @Override
+        public void showData2(ArrayList<?> list) {
+            mBannerItemList=(List<BannerItem>)list;
+            mViewPager=rootView.findViewById(R.id.home_view_paper);
+            mTextView=rootView.findViewById(R.id.home_banner_text);
+            mImageView=new ImageView(itemView.getContext());
+            mImageView.setImageBitmap(mBannerItemList.get(2).getBitmap());
+            mImageViewList.add(mImageView);
+            mBannerTitle.add(mBannerItemList.get(2).getTitle());
+            mBannerLink.add(mBannerItemList.get(2).getUrl());
+            for (int i = 0; i < mBannerItemList.size(); i++) {
+                mImageView=new ImageView(itemView.getContext());
+                mImageView.setImageBitmap(mBannerItemList.get(i).getBitmap());
+                mImageViewList.add(mImageView);
+                mBannerTitle.add(mBannerItemList.get(i).getTitle());
+                mBannerLink.add(mBannerItemList.get(i).getUrl());
+            }
+            mImageView=new ImageView(itemView.getContext());
+            mImageView.setImageBitmap(mBannerItemList.get(0).getBitmap());
+            mImageViewList.add(mImageView);
+            mBannerTitle.add(mBannerItemList.get(0).getTitle());
+            mBannerLink.add(mBannerItemList.get(0).getUrl());
+            mTextView.setText(mBannerItemList.get(2).getTitle());
+            BannerAdapter bannerAdapter=new BannerAdapter(mImageViewList);
+            mViewPager.setAdapter(bannerAdapter);
+            mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+                @Override
+                public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                }
+
+                @Override
+                public void onPageSelected(int position) {
+                    //  * 真实数据：      0       1       2
+                    //  * 实际数据：2     0       1       2       0
+                    //  最后一个0切换到前面的0页面位置
+                    if (position == mImageViewList.size() - 1) {
+                        currentPosition =1;
+
+                    } else if (position == 0) {
+                        currentPosition = mImageViewList.size() - 2;
+                    } else {
+                        currentPosition = position;
+                    }
+                    mTextView.setText(mBannerTitle.get(position));
+                }
+
+                @Override
+                public void onPageScrollStateChanged(int state) {
+                    // 页面滑动静止状态，偷天换日，换位置
+                    if (state == ViewPager.SCROLL_STATE_IDLE) {
+                        // smoothScroll: 设置平稳滑动
+                        mViewPager.setCurrentItem(currentPosition, false);
+                    }
+                }
+            });
+            if (beginCarousel){
+                mHandler.sendEmptyMessageDelayed(0, 1000*2);
+            }
+           mViewPager.setOnTouchListener(new View.OnTouchListener() {
+               float Dx;
+               float Mx;
+                @Override
+                public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                    switch (motionEvent.getAction()){
+                        case MotionEvent.ACTION_DOWN:
+                            beginCarousel=false;
+                            mHandler.removeCallbacksAndMessages(null);
+                            viewPaperClick=0;
+                            Dx=motionEvent.getX();
+                            System.out.println("tou"+Dx);
+                            break;
+                        case MotionEvent.ACTION_MOVE:
+                            Mx=motionEvent.getX();
+                            System.out.println("tou"+Mx);
+                            float move=Mx-Dx;
+                            System.out.println("tou:move"+move);
+                            if (move < -100) {
+                                viewPaperClick = 1;
+                            }else if(move>100){
+                                viewPaperClick = 1;
+                            }
+                            break;
+                        case MotionEvent.ACTION_UP:
+                            mHandler.sendEmptyMessageDelayed(0, 900*2);
+                            beginCarousel=false;
+                            if(viewPaperClick==0){
+                                 Log.d("touch","5555");
+                                int item= mViewPager.getCurrentItem();
+                                String data=mBannerLink.get(item);
+                                String title=mBannerTitle.get(item);
+                                Intent intent=new Intent(itemView.getContext(), WebViewClick.class);//给后面开启的活动传值
+                                intent.putExtra("link",data);
+                                intent.putExtra("title",title);
+                                rootView.getContext().startActivity(intent);
+                            }
+                    }
+                    return false;
+                }
+            });
+        }
+
+        @Override
+        public void showData(ArrayList<?> list) {
+
+        }
+    }
 
     public class FooterHolder extends RecyclerView.ViewHolder {
         TextView footerText;
@@ -154,6 +271,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
 
 
     }
+
     @Override
     public int getItemViewType(int position) {
         if (position == mList.size()) {
@@ -161,7 +279,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
             return 1;
         } else if(position==0){
             //加载HeadHolder
-            return 2;
+            return 3;
         }else {
             return 0;
         }
@@ -178,12 +296,13 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         //... list传进来的数据 添加到mList中
         if(list.isEmpty()){
             arriveBottom=true;
+        }else{
+            mList.size()+1;
         }
         for (int i = 0; i < list.size(); i++) {
             mList.add(list.get(i));
         }
-        //通知适配器更新
-        notifyDataSetChanged();
+       
     }
 
 }
