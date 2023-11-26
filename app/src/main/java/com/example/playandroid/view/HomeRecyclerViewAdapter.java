@@ -181,6 +181,7 @@ public class HomeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
                             mHandler.sendEmptyMessageDelayed(0, 900*2);
                             beginCarousel=false;
                             if(viewPaperClick==0){
+                                 Log.d("touch","5555");
                                 int item= mViewPager.getCurrentItem();
                                 String data=mBannerLink.get(item);
                                 String title=mBannerTitle.get(item);
